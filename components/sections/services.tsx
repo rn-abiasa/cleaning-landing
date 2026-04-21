@@ -7,9 +7,9 @@ import { useScrollReveal } from "@/lib/hooks/useScrollReveal";
 const services = [
   {
     id: 1,
-    name: "Pembersihan Rumah",
+    name: "Daily Cleaning Rumah",
     description:
-      "Solusi kebersihan harian untuk dapur, kamar mandi, kamar tidur, dan ruang keluarga dengan standar detail tinggi.",
+      "Pembersihan harian menyeluruh mencakup sapu, pel, lap debu, sanitasi kamar mandi, dan area dapur Anda.",
     features: [
       "Pembersihan rutin",
       "Fokus dapur & kamar mandi",
@@ -20,9 +20,9 @@ const services = [
   },
   {
     id: 2,
-    name: "Deep Cleaning",
+    name: "Deep Cleaning Menyeluruh",
     description:
-      "Pembersihan mendalam untuk menghilangkan kotoran membandel yang tersembunyi di sudut-sudut ruangan Anda.",
+      "Fokus pada noda membandel, kerak, pembersihan furnitur, dan disinfeksi total untuk ruangan yang lebih sehat.",
     features: [
       "Pembersihan noda membandel",
       "Vakum furnitur",
@@ -33,9 +33,9 @@ const services = [
   },
   {
     id: 3,
-    name: "Pembersihan Pindahan",
+    name: "Bersih Pindahan / Renovasi",
     description:
-      "Siapkan rumah baru Anda atau tinggalkan rumah lama Anda dalam keadaan bersih sempurna tanpa beban.",
+      "Pembersihan sisa material konstruksi dan debu tebal, mempersiapkan hunian siap ditempati dengan nyaman.",
     features: [
       "Pembersihan menyeluruh",
       "Penghilang debu konstruksi",
@@ -57,22 +57,27 @@ function Services() {
             Layanan Kami
           </p>
           <div className="mt-4 md:w-2/3 lg:w-1/2">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-              Solusi kebersihan terintegrasi untuk setiap ruangan.
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+              Layanan Cleaning Service Komprehensif Sesuai Kebutuhan Anda
             </h2>
             <p className="text-base md:text-lg font-normal text-muted-foreground mt-6 leading-relaxed">
-              Dari pembersihan rutin hingga deep cleaning, Resika memberikan hasil konsisten dengan standar baku yang dirancang khusus untuk rumah, apartemen, dan kantor Anda.
+              Dari pembersihan rutin hingga deep cleaning, KlinBersih memberikan
+              hasil konsisten dengan standar baku yang dirancang khusus untuk
+              rumah, apartemen, dan kantor Anda.
             </p>
           </div>
         </div>
         <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-8">
           {services.map((service, index) => (
-            <div key={service.id} className={`flex flex-col gap-6 group reveal reveal-delay-${(index + 1) * 100}`}>
+            <div
+              key={service.id}
+              className={`flex flex-col gap-6 group reveal reveal-delay-${(index + 1) * 100}`}
+            >
               <div className="overflow-hidden rounded-3xl aspect-[4/3]">
-                <img 
-                  src={service.image} 
+                <img
+                  src={service.image}
                   alt={service.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col flex-grow">
@@ -82,7 +87,13 @@ function Services() {
                 </p>
                 <div className="flex flex-wrap gap-2 mt-6">
                   {service.features.map((feature) => (
-                    <Badge key={feature} variant="secondary" className="font-medium bg-secondary text-foreground">{feature}</Badge>
+                    <Badge
+                      key={feature}
+                      variant="secondary"
+                      className="font-medium bg-secondary text-foreground"
+                    >
+                      {feature}
+                    </Badge>
                   ))}
                 </div>
                 <Button className="h-12 w-12 rounded-full text-white mt-8 group-hover:bg-primary transition-colors">

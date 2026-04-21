@@ -5,24 +5,27 @@ import { useScrollReveal } from "@/lib/hooks/useScrollReveal";
 const posts = [
   {
     id: 1,
-    title: "5 Tips Menjaga Kebersihan Rumah Selama Musim Hujan",
-    excerpt: "Musim hujan seringkali membawa udara lembap dan kotoran dari luar. Berikut cara efektif menjaga rumah tetap bersih dan segar.",
+    title: "Cara Ampuh Menghilangkan Kerak Membandel di Kamar Mandi",
+    excerpt:
+      "Temukan rahasia membersihkan kerak air dan jamur di kamar mandi dengan bahan yang aman dan mudah didapat.",
     date: "12 Okt 2023",
     category: "Tips & Trik",
     image: "/cleaning2.jpeg",
   },
   {
     id: 2,
-    title: "Mengapa Deep Cleaning Penting untuk Kesehatan Keluarga?",
-    excerpt: "Pembersihan rutin saja tidak cukup. Ketahui manfaat deep cleaning dalam membasmi bakteri dan alergen yang tersembunyi.",
+    title: "Pentingnya Deep Cleaning Rutin untuk Penderita Alergi",
+    excerpt:
+      "Debu dan tungau bisa memicu alergi. Pelajari bagaimana deep cleaning membantu menciptakan rumah bebas alergen.",
     date: "28 Sep 2023",
     category: "Kesehatan",
     image: "/cleaning1.jpeg",
   },
   {
     id: 3,
-    title: "Panduan Memilih Layanan Kebersihan Profesional",
-    excerpt: "Bingung memilih layanan kebersihan yang tepat? Perhatikan 4 hal penting ini sebelum memesan jasa cleaning service.",
+    title: "Kapan Waktu Terbaik Memanggil Jasa Cleaning Service?",
+    excerpt:
+      "Jadwal padat seringkali membuat rumah terbengkalai. Ketahui tanda-tanda kapan Anda membutuhkan bantuan profesional.",
     date: "15 Sep 2023",
     category: "Panduan",
     image: "/cleaning2.jpeg",
@@ -40,11 +43,14 @@ function Blog() {
             <p className="text-sm font-semibold tracking-wider text-muted-foreground uppercase">
               Artikel Terbaru
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 leading-tight">
-              Wawasan & Tips Kebersihan
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium mt-4 leading-tight">
+              Panduan & Tips Menjaga Kebersihan Hunian
             </h2>
           </div>
-          <a href="#" className="inline-flex items-center gap-2 py-2 font-medium border-b border-black hover:opacity-70 transition-opacity whitespace-nowrap">
+          <a
+            href="#"
+            className="inline-flex items-center gap-2 py-2 font-medium border-b border-black hover:opacity-70 transition-opacity whitespace-nowrap"
+          >
             Baca Semua Artikel
             <ArrowRight size={18} />
           </a>
@@ -52,12 +58,15 @@ function Blog() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           {posts.map((post, index) => (
-            <div key={post.id} className={`group cursor-pointer flex flex-col reveal reveal-delay-${(index + 1) * 100}`}>
+            <div
+              key={post.id}
+              className={`group cursor-pointer flex flex-col reveal reveal-delay-${(index + 1) * 100}`}
+            >
               <div className="overflow-hidden rounded-2xl aspect-[3/2] mb-6">
-                <img 
-                  src={post.image} 
+                <img
+                  src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="flex items-center gap-4 text-sm font-medium text-muted-foreground mb-4">

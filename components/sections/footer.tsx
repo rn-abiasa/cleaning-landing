@@ -12,7 +12,7 @@ function Footer() {
                 href="#"
                 className="text-3xl font-bold italic inline-block mb-6"
               >
-                Resika<span className="text-primary">.</span>
+                KlinBersih<span className="text-primary">.</span>
               </a>
               <p className="text-white/70 text-base leading-relaxed mb-8">
                 Mitra kebersihan terpercaya Anda. Kami hadir untuk menciptakan
@@ -146,7 +146,7 @@ function Footer() {
                 </li>
                 <li className="flex items-center gap-3 text-white/70">
                   <Mail size={20} className="shrink-0" />
-                  <span>halo@resika.com</span>
+                  <span>halo@klinbersih.com</span>
                 </li>
               </ul>
             </div>
@@ -154,7 +154,7 @@ function Footer() {
 
           <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
             <p>
-              &copy; {new Date().getFullYear()} Resika. All rights reserved.
+              &copy; {new Date().getFullYear()} KlinBersih. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-white transition-colors">

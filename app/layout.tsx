@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jasa Cleaning Service Bandung | Resika",
-  description: "Resika menyediakan layanan cleaning service.",
+  title: "Jasa Cleaning Service Panggilan Terbaik & Profesional | KlinBersih",
+  description: "KlinBersih adalah penyedia jasa cleaning service panggilan terpercaya untuk rumah, apartemen, dan kantor. Kami menawarkan pembersihan menyeluruh (deep cleaning) dengan tenaga ahli profesional.",
 };
 
 export default function RootLayout({

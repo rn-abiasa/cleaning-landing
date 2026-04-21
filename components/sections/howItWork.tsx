@@ -4,18 +4,21 @@ import { useScrollReveal } from "@/lib/hooks/useScrollReveal";
 const steps = [
   {
     id: 1,
-    name: "Pesan Layanan",
-    description: "Pilih jadwal, lokasi, dan jenis layanan yang sesuai dengan kebutuhan Anda secara online.",
+    name: "Konsultasi & Jadwalkan",
+    description:
+      "Hubungi kami via WhatsApp atau website untuk mengatur waktu dan mendiskusikan kebutuhan pembersihan Anda.",
   },
   {
     id: 2,
-    name: "Tim Kami Datang",
-    description: "Tenaga pembersih profesional kami tiba tepat waktu dengan peralatan dan bahan pembersih lengkap.",
+    name: "Tim Profesional Tiba",
+    description:
+      "Staff KlinBersih akan datang tepat waktu ke lokasi dengan membawa peralatan lengkap berstandar industri.",
   },
   {
     id: 3,
-    name: "Nikmati Hasilnya",
-    description: "Bersantai dan nikmati ruangan yang bersih, harum, dan tertata rapi seperti baru.",
+    name: "Ruangan Bersih Sempurna",
+    description:
+      "Nikmati hasil pengerjaan kami. Lakukan pengecekan akhir sebelum tim kami meninggalkan lokasi Anda.",
   },
 ];
 
@@ -30,21 +33,30 @@ function HowItWork() {
             <p className="text-sm font-semibold tracking-wider text-white/80 text-center uppercase">
               Cara Kerja
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mt-4 leading-tight">
-              3 Langkah Sederhana Menuju Ruangan Bersih
+            <h2 className="text-3xl md:text-4xl font-medium text-white text-center mt-4 leading-tight">
+              Pesan Jasa Kebersihan dalam 3 Langkah Mudah
             </h2>
             <p className="text-base font-normal text-white/80 text-center mt-6 leading-relaxed">
-              Pesan dalam hitungan menit, dapatkan kepastian layanan, dan nikmati hasil yang memuaskan untuk setiap jenis properti Anda.
+              Pesan dalam hitungan menit, dapatkan kepastian layanan, dan
+              nikmati hasil yang memuaskan dari KlinBersih untuk setiap jenis
+              properti Anda.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mt-16 md:mt-24">
             {steps.map((step, index) => (
-              <div key={step.id} className={`flex flex-col items-center text-center reveal reveal-delay-${(index + 1) * 100}`}>
+              <div
+                key={step.id}
+                className={`flex flex-col items-center text-center reveal reveal-delay-${(index + 1) * 100}`}
+              >
                 <div className="h-16 w-16 md:h-20 md:w-20 bg-primary/20 rounded-full flex items-center justify-center mb-6">
-                  <span className="text-2xl md:text-3xl font-bold text-primary">{step.id}</span>
+                  <span className="text-2xl md:text-3xl font-bold text-primary">
+                    {step.id}
+                  </span>
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">{step.name}</h3>
+                <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
+                  {step.name}
+                </h3>
                 <p className="text-base text-white/70 leading-relaxed">
                   {step.description}
                 </p>
